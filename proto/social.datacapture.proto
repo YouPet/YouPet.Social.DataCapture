@@ -1,0 +1,13 @@
+syntax="proto3";
+
+service UserService{
+  rpc GetUser(GetUserRequest)returns (GetUserResponse){}
+}
+
+message GetUserRequest{
+  int32 UserID=1;
+}
+
+message GetUserResponse{
+  string NickName=1;
+}
